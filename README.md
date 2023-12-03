@@ -11,7 +11,7 @@ Configuration
 -------------
 
 1. Create GitHub OAuth application. Redirect URL is ``https://your-server/_github/return``.
-2. Add ``auth_backends=pretix_auth_okta.auth.OktaAuthBackend,pretix.base.auth.NativeAuthBackend`` to ``[pretix]`` section of ``pretix.cfg``
+2. Add ``auth_backends=pretix_auth_okta.auth.GitHubAuthBackend,pretix.base.auth.NativeAuthBackend`` to ``[pretix]`` section of ``pretix.cfg``
 3. Add the following section to ``pretix.cfg``:
 
         [pretix_auth_github]
