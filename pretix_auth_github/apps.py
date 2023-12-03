@@ -10,13 +10,12 @@ from . import __version__
 
 class PluginApp(PluginConfig):
     default = True
-    name = 'pretix_auth_okta'
-    verbose_name = 'Okta Authentication'
+    name = 'pretix_auth_github'
+    verbose_name = 'GitHub Authentication'
 
     class PretixPluginMeta:
-        name = gettext_lazy('Okta Authentication')
-        author = 'pretix Team'
-        description = gettext_lazy('Supports pretix backend auth using Okta')
+        name = gettext_lazy('GitHub Authentication')
+        description = gettext_lazy('Supports pretix backend auth using GitHub')
         visible = False
         version = __version__
         category = 'INTEGRATION'
