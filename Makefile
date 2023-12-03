@@ -1,5 +1,5 @@
 all: localecompile
-LNGS:=`find pretix_auth_okta/locale/ -mindepth 1 -maxdepth 1 -type d -printf "-l %f "`
+LNGS:=`find pretix_auth_github/locale/ -mindepth 1 -maxdepth 1 -type d -printf "-l %f "`
 
 localecompile:
 	django-admin compilemessages
