@@ -1,24 +1,18 @@
 [project]
-name = "pretix-auth-okta"
+name = "pretix-auth-github"
 dynamic = ["version"]
-description = "Supports pretix backend auth using Okta"
-readme = "README.rst"
+description = "Supports pretix backend auth using github, based on pretix-auth-okta"
+readme = "README.md"
 requires-python = ">=3.9"
 license = {file = "LICENSE"}
 keywords = ["pretix"]
-authors = [
-    {name = "pretix team", email = "support@pretix.eu"},
-]
-maintainers = [
-    {name = "pretix team", email = "support@pretix.eu"},
-]
 
 dependencies = [
 
 ]
 
 [project.entry-points."pretix.plugin"]
-pretix_auth_okta = "pretix_auth_okta:PretixPluginMeta"
+pretix_auth_okta = "pretix_auth_github:PretixPluginMeta"
 
 [project.entry-points."distutils.commands"]
 build = "pretix_plugin_build.build:CustomBuild"
@@ -30,13 +24,13 @@ requires = [
 ]
 
 [project.urls]
-homepage = "https://github.com/pretix/pretix-auth-okta"
+homepage = "https://github.com/agrillenberger/pretix-auth-github"
 
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.dynamic]
-version = {attr = "pretix_auth_okta.__version__"}
+version = {attr = "pretix_auth_github.__version__"}
 
 [tool.setuptools.packages.find]
 include = ["pretix*"]
