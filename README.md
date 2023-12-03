@@ -26,6 +26,6 @@ Configuration
 License
 -------
 
-As the original plugin, this plugin is released under the terms of the Apache License 2.0
+As the original plugin, this plugin is released under the terms of the Apache License 2.0. 
 
 The original plugin ``pretix-auth-okta`` is copyright 2020 pretix Team
